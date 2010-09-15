@@ -1,0 +1,5 @@
+E:\Users\conrada\netbeans_svn\OpinionFinder\OpinionFinder2\lib\featurefiles\intensifiers2.tff
+E:\Users\conrada\netbeans_svn\OpinionFinder\OpinionFinder2\lib\featurefiles\lev-fn-se1.tff
+E:\Users\conrada\netbeans_svn\OpinionFinder\OpinionFinder2\lib\featurefiles\subjclueslen1polar.tff
+E:\Users\conrada\netbeans_svn\OpinionFinder\OpinionFinder2\lib\featurefiles\subjcluesSentenceClassifiersOpinionFinderJune06.tff
+E:\Users\conrada\netbeans_svn\OpinionFinder\OpinionFinder2\lib\featurefiles\valenceshifters.tff
