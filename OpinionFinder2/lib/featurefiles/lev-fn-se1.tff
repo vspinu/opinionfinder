@@ -1,0 +1,693 @@
+# This file contains likely speech event related verbs, adjectives,
+# and nouns, from Beth Levin's "English Verb Classes and Alternations"
+# book (verbs only) and from Framenet (verbs, nouns, and adjectives).
+# Types beginning with bl are Levin's, fn are Framenet.  Currently (as
+# of 6/20/02) There are 666 entries of which 619 are unique (i.e., no
+# other entry has same word with same POS).
+#
+# Framenet entry notes:  types are of form: fn_domain_frame_se_{v,a,n} 
+# words were obtained by searching for lemma's with by frame element
+# (message, speaker, and topic were used, so as to cover all of
+# framenets communication frames).  Entries are not given likelihoods
+# of being good speech event indicators, but the types should help,
+# e.g., those with domain "communication" should be much better clues
+# than those with domain "body" (in fact, these should probably be
+# removed, but I left them in for completeness)
+#
+# Levin entry notes: bl_sec indicates which section of book taken
+# from, 37 is "verbs of communication" 33 is "judgement verbs" and 29
+# is (part of) "verbs with predicative complements", including appoint
+# 29.1, characterize 29.2, dub 29.3, declare 29.4 , and conjecture
+# 29.5 verbs.  37 taken as most likely speech event, therefore marked
+# str_se_verb "strong speech event verb", section 33 is
+# mod_se_verb=moderate, and 29 have the least likelihood
+# (weak=wk_se_verb).
+#
+# Date: June 20, 2002   Compiled by: Paul Davis  pcdavis@ling.osu.edu
+
+type=bl_mod_se_verb len=1 word1=abuse pos1=verb stemmed1=yes bl_sec=33
+type=bl_wk_se_verb len=1 word1=accept pos1=verb stemmed1=yes bl_sec=29.2
+type=bl_mod_se_verb len=1 word1=acclaim pos1=verb stemmed1=yes bl_sec=33
+type=fn_cognition_judgment_se_v len=1 word1=accuse stemmed1=yes pos1=verb
+type=bl_wk_se_verb len=1 word1=acknowledge pos1=verb stemmed1=yes bl_sec=29.1
+type=fn_communication_statement_se_v len=1 word1=add stemmed1=yes pos1=verb
+type=bl_wk_se_verb len=1 word1=address pos1=verb stemmed1=yes bl_sec=29.2
+type=fn_communication_statement_se_n len=1 word1=address stemmed1=yes pos1=noun
+type=fn_communication_statement_se_v len=1 word1=address stemmed1=yes pos1=verb
+type=bl_wk_se_verb len=1 word1=adjudge pos1=verb stemmed1=yes bl_sec=29.4
+type=bl_wk_se_verb len=1 word1=adjudicate pos1=verb stemmed1=yes bl_sec=29.4
+type=fn_communication_statement_se_n len=1 word1=admission stemmed1=yes pos1=noun
+type=bl_wk_se_verb len=1 word1=admit pos1=verb stemmed1=yes bl_sec=29.5
+type=fn_communication_statement_se_v len=1 word1=admit stemmed1=yes pos1=verb
+type=bl_str_se_verb len=1 word1=admonish pos1=verb stemmed1=yes bl_sec=37.9
+type=bl_wk_se_verb len=1 word1=adopt pos1=verb stemmed1=yes bl_sec=29.1
+type=bl_str_se_verb len=1 word1=advise pos1=verb stemmed1=yes bl_sec=37.9
+type=fn_communication_statement_se_v len=1 word1=advise stemmed1=yes pos1=verb
+type=fn_communication_statement_se_v len=1 word1=affirm stemmed1=yes pos1=verb
+type=fn_communication_statement_se_n len=1 word1=affirmation stemmed1=yes pos1=noun
+type=bl_str_se_verb len=1 word1=alert pos1=verb stemmed1=yes bl_sec=37.9
+type=fn_communication_statement_se_n len=1 word1=allegation stemmed1=yes pos1=noun
+type=fn_communication_statement_se_v len=1 word1=allege stemmed1=yes pos1=verb
+type=bl_wk_se_verb len=1 word1=allow pos1=verb stemmed1=yes bl_sec=29.5
+type=bl_str_se_verb len=1 word1=announce pos1=verb stemmed1=yes bl_sec=37.7
+type=fn_communication_statement_se_v len=1 word1=announce stemmed1=yes pos1=verb
+type=fn_communication_statement_se_n len=1 word1=announcement stemmed1=yes pos1=noun
+type=bl_wk_se_verb len=1 word1=anoint pos1=verb stemmed1=yes bl_sec=29.3
+type=fn_communication_communication_response_se_n len=1 word1=answer stemmed1=yes pos1=noun
+type=fn_communication_communication_response_se_v len=1 word1=answer stemmed1=yes pos1=verb
+type=fn_communication_request_se_n len=1 word1=appeal stemmed1=yes pos1=noun
+type=bl_mod_se_verb len=1 word1=applaud pos1=verb stemmed1=yes bl_sec=33
+type=bl_wk_se_verb len=1 word1=appoint pos1=verb stemmed1=yes bl_sec=29.1
+type=bl_wk_se_verb len=1 word1=appreciate pos1=verb stemmed1=yes bl_sec=29.2
+type=bl_str_se_verb len=1 word1=argue pos1=verb stemmed1=yes bl_sec=37.6
+type=fn_communication_conversation_se_v len=1 word1=argue stemmed1=yes pos1=verb
+type=bl_str_se_verb len=1 word1=articulate pos1=verb stemmed1=yes bl_sec=37.7
+type=fn_cognition_coming-to-believe_se_v len=1 word1=ascertain stemmed1=yes pos1=verb
+type=bl_str_se_verb len=1 word1=ask pos1=verb stemmed1=yes bl_sec=37.1
+type=fn_communication_request_se_v len=1 word1=ask stemmed1=yes pos1=verb
+type=bl_wk_se_verb len=1 word1=assert pos1=verb stemmed1=yes bl_sec=29.5
+type=fn_communication_statement_se_v len=1 word1=assert stemmed1=yes pos1=verb
+type=fn_communication_statement_se_n len=1 word1=assertion stemmed1=yes pos1=noun
+type=bl_wk_se_verb len=1 word1=assume pos1=verb stemmed1=yes bl_sec=29.4
+type=fn_communication_statement_se_v len=1 word1=assure stemmed1=yes pos1=verb
+type=bl_wk_se_verb len=1 word1=avow pos1=verb stemmed1=yes bl_sec=29.4
+type=bl_str_se_verb len=1 word1=babble pos1=verb stemmed1=yes bl_sec=37.3
+type=fn_communication_communication_noise_se_n len=1 word1=babble stemmed1=yes pos1=noun
+type=fn_communication_manner_se_v len=1 word1=babble stemmed1=yes pos1=verb
+type=bl_mod_se_verb len=1 word1=backbite pos1=verb stemmed1=yes bl_sec=33
+type=bl_wk_se_verb len=1 word1=baptize pos1=verb stemmed1=yes bl_sec=29.3
+type=bl_str_se_verb len=1 word1=bark pos1=verb stemmed1=yes bl_sec=37.3
+type=fn_communication_communication_noise_se_v len=1 word1=bark stemmed1=yes pos1=verb
+type=bl_str_se_verb len=1 word1=bawl pos1=verb stemmed1=yes bl_sec=37.3
+type=fn_communication_communication_noise_se_v len=1 word1=bawl stemmed1=yes pos1=verb
+type=fn_communication_gesture_se_v len=1 word1=beckon stemmed1=yes pos1=verb
+type=fn_communication_request_se_v len=1 word1=beg stemmed1=yes pos1=verb
+type=bl_wk_se_verb len=1 word1=believe pos1=verb stemmed1=yes bl_sec=29.4
+type=bl_str_se_verb len=1 word1=bellow pos1=verb stemmed1=yes bl_sec=37.3
+type=fn_communication_communication_noise_se_v len=1 word1=bellow stemmed1=yes pos1=verb
+type=fn_cognition_judgment_se_v len=1 word1=berate stemmed1=yes pos1=verb
+type=fn_communication_request_se_v len=1 word1=beseech stemmed1=yes pos1=verb
+type=fn_communication_conversation_se_v len=1 word1=bicker stemmed1=yes pos1=verb
+type=fn_communication_conversation_se_n len=1 word1=bickering stemmed1=yes pos1=noun
+type=bl_wk_se_verb len=1 word1=bill pos1=verb stemmed1=yes bl_sec=29.2
+type=bl_str_se_verb len=1 word1=blab pos1=verb stemmed1=yes bl_sec=37.7
+type=bl_str_se_verb len=1 word1=bleat pos1=verb stemmed1=yes bl_sec=37.3
+type=fn_communication_communication_noise_se_v len=1 word1=bleat stemmed1=yes pos1=verb
+type=bl_mod_se_verb len=1 word1=bless pos1=verb stemmed1=yes bl_sec=33
+type=fn_communication_candidness_se_a len=1 word1=blunt stemmed1=yes pos1=adj
+type=bl_str_se_verb len=1 word1=blurt pos1=verb stemmed1=yes bl_sec=37.7
+type=fn_communication_manner_se_v len=1 word1=bluster stemmed1=yes pos1=verb
+type=bl_str_se_verb len=1 word1=boast pos1=verb stemmed1=yes bl_sec=37.8
+type=fn_communication_statement_se_n len=1 word1=boast stemmed1=yes pos1=noun
+type=fn_communication_statement_se_v len=1 word1=boast stemmed1=yes pos1=verb
+type=fn_body_body-movement_se_v len=1 word1=bob stemmed1=yes pos1=verb
+type=bl_str_se_verb len=1 word1=boom pos1=verb stemmed1=yes bl_sec=37.3
+type=fn_communication_communication_noise_se_v len=1 word1=boom stemmed1=yes pos1=verb
+type=bl_str_se_verb len=1 word1=brag pos1=verb stemmed1=yes bl_sec=37.8
+type=fn_communication_statement_se_v len=1 word1=brag stemmed1=yes pos1=verb
+type=bl_wk_se_verb len=1 word1=brand pos1=verb stemmed1=yes bl_sec=29.3
+type=bl_str_se_verb len=1 word1=bray pos1=verb stemmed1=yes bl_sec=37.3
+type=fn_communication_communication_noise_se_v len=1 word1=bray stemmed1=yes pos1=verb
+type=bl_str_se_verb len=1 word1=burble pos1=verb stemmed1=yes bl_sec=37.3
+type=fn_communication_communication_noise_se_v len=1 word1=burble stemmed1=yes pos1=verb
+type=bl_str_se_verb len=1 word1=cable pos1=verb stemmed1=yes bl_sec=37.4
+type=bl_str_se_verb len=1 word1=cackle pos1=verb stemmed1=yes bl_sec=37.3
+type=fn_communication_communication_noise_se_v len=1 word1=cackle stemmed1=yes pos1=verb
+type=bl_str_se_verb len=1 word1=call pos1=verb stemmed1=yes bl_sec=37.3
+type=bl_wk_se_verb len=1 word1=call pos1=verb stemmed1=yes bl_sec=29.3
+type=bl_mod_se_verb len=1 word1=calumniate pos1=verb stemmed1=yes bl_sec=33
+type=fn_communication_candidness_se_a len=1 word1=candid stemmed1=yes pos1=adj
+type=bl_str_se_verb len=1 word1=carol pos1=verb stemmed1=yes bl_sec=37.3
+type=bl_wk_se_verb len=1 word1=cast pos1=verb stemmed1=yes bl_sec=29.2
+type=bl_mod_se_verb len=1 word1=castigate pos1=verb stemmed1=yes bl_sec=33
+type=fn_cognition_judgment_se_v len=1 word1=castigate stemmed1=yes pos1=verb
+type=bl_str_se_verb len=1 word1=caution pos1=verb stemmed1=yes bl_sec=37.9
+type=fn_communication_statement_se_v len=1 word1=caution stemmed1=yes pos1=verb
+type=bl_mod_se_verb len=1 word1=celebrate pos1=verb stemmed1=yes bl_sec=33
+type=bl_mod_se_verb len=1 word1=censure pos1=verb stemmed1=yes bl_sec=33
+type=bl_wk_se_verb len=1 word1=certify pos1=verb stemmed1=yes bl_sec=29.2
+type=bl_str_se_verb len=1 word1=chant pos1=verb stemmed1=yes bl_sec=37.3
+type=fn_communication_manner_se_v len=1 word1=chant stemmed1=yes pos1=verb
+type=bl_wk_se_verb len=1 word1=characterize pos1=verb stemmed1=yes bl_sec=29.2
+type=bl_mod_se_verb len=1 word1=chasten pos1=verb stemmed1=yes bl_sec=33
+type=bl_mod_se_verb len=1 word1=chastise pos1=verb stemmed1=yes bl_sec=33
+type=fn_cognition_judgment_se_v len=1 word1=chastise stemmed1=yes pos1=verb
+type=bl_str_se_verb len=1 word1=chat pos1=verb stemmed1=yes bl_sec=37.6
+type=fn_communication_conversation_se_v len=1 word1=chat stemmed1=yes pos1=verb
+type=bl_str_se_verb len=1 word1=chatter pos1=verb stemmed1=yes bl_sec=37.3
+type=bl_str_se_verb len=1 word1=chatter pos1=verb stemmed1=yes bl_sec=37.6
+type=fn_communication_manner_se_v len=1 word1=chatter stemmed1=yes pos1=verb
+type=bl_mod_se_verb len=1 word1=chide pos1=verb stemmed1=yes bl_sec=33
+type=fn_cognition_judgment_se_v len=1 word1=chide stemmed1=yes pos1=verb
+type=bl_str_se_verb len=1 word1=chirp pos1=verb stemmed1=yes bl_sec=37.3
+type=fn_communication_communication_noise_se_v len=1 word1=chirp stemmed1=yes pos1=verb
+type=fn_communication_communication_noise_se_v len=1 word1=chirrup stemmed1=yes pos1=verb
+type=bl_str_se_verb len=1 word1=chitchat pos1=verb stemmed1=yes bl_sec=37.6
+type=bl_wk_se_verb len=1 word1=choose pos1=verb stemmed1=yes bl_sec=29.2
+type=bl_wk_se_verb len=1 word1=christen pos1=verb stemmed1=yes bl_sec=29.3
+type=fn_communication_communication_noise_se_v len=1 word1=chuckle stemmed1=yes pos1=verb
+type=bl_str_se_verb len=1 word1=cite pos1=verb stemmed1=yes bl_sec=37.1
+type=bl_wk_se_verb len=1 word1=cite pos1=verb stemmed1=yes bl_sec=29.2
+type=bl_str_se_verb len=1 word1=claim pos1=verb stemmed1=yes bl_sec=37.7
+type=fn_communication_statement_se_n len=1 word1=claim stemmed1=yes pos1=noun
+type=bl_wk_se_verb len=1 word1=class pos1=verb stemmed1=yes bl_sec=29.2
+type=bl_wk_se_verb len=1 word1=classify pos1=verb stemmed1=yes bl_sec=29.2
+type=bl_str_se_verb len=1 word1=cluck pos1=verb stemmed1=yes bl_sec=37.3
+type=fn_communication_communication_noise_se_v len=1 word1=cluck stemmed1=yes pos1=verb
+type=fn_communication_request_se_n len=1 word1=command stemmed1=yes pos1=noun
+type=fn_communication_request_se_v len=1 word1=command stemmed1=yes pos1=verb
+type=bl_mod_se_verb len=1 word1=commend pos1=verb stemmed1=yes bl_sec=33
+type=fn_communication_statement_se_n len=1 word1=comment stemmed1=yes pos1=noun
+type=fn_communication_statement_se_v len=1 word1=comment stemmed1=yes pos1=verb
+type=fn_communication_conversation_se_v len=1 word1=communicate stemmed1=yes pos1=verb
+type=fn_communication_conversation_se_n len=1 word1=communication stemmed1=yes pos1=noun
+type=bl_mod_se_verb len=1 word1=compensate pos1=verb stemmed1=yes bl_sec=33
+type=bl_str_se_verb len=1 word1=complain pos1=verb stemmed1=yes bl_sec=37.8
+type=fn_communication_statement_se_v len=1 word1=complain stemmed1=yes pos1=verb
+type=fn_communication_statement_se_n len=1 word1=complaint stemmed1=yes pos1=noun
+type=bl_mod_se_verb len=1 word1=compliment pos1=verb stemmed1=yes bl_sec=33
+type=fn_cognition_judgment_se_v len=1 word1=compliment stemmed1=yes pos1=verb
+type=fn_communication_statement_se_v len=1 word1=concede stemmed1=yes pos1=verb
+type=fn_communication_statement_se_n len=1 word1=concession stemmed1=yes pos1=noun
+type=bl_mod_se_verb len=1 word1=condemn pos1=verb stemmed1=yes bl_sec=33
+type=bl_str_se_verb len=1 word1=confer pos1=verb stemmed1=yes bl_sec=37.6
+type=fn_communication_conversation_se_v len=1 word1=confer stemmed1=yes pos1=verb
+type=bl_str_se_verb len=1 word1=confess pos1=verb stemmed1=yes bl_sec=37.7
+type=bl_wk_se_verb len=1 word1=confess pos1=verb stemmed1=yes bl_sec=29.4
+type=fn_communication_statement_se_n len=1 word1=confession stemmed1=yes pos1=noun
+type=bl_str_se_verb len=1 word1=confide pos1=verb stemmed1=yes bl_sec=37.7
+type=bl_wk_se_verb len=1 word1=confirm pos1=verb stemmed1=yes bl_sec=29.2
+type=bl_mod_se_verb len=1 word1=congratulate pos1=verb stemmed1=yes bl_sec=33
+type=bl_wk_se_verb len=1 word1=conjecture pos1=verb stemmed1=yes bl_sec=29.5
+type=bl_wk_se_verb len=1 word1=consecrate pos1=verb stemmed1=yes bl_sec=29.3
+type=fn_communication_commitment_se_v len=1 word1=consent stemmed1=yes pos1=verb
+type=bl_wk_se_verb len=1 word1=consider pos1=verb stemmed1=yes bl_sec=29.1
+type=fn_communication_statement_se_n len=1 word1=contention stemmed1=yes pos1=noun
+type=fn_communication_conversation_se_n len=1 word1=conversation stemmed1=yes pos1=noun
+type=bl_str_se_verb len=1 word1=converse pos1=verb stemmed1=yes bl_sec=37.6
+type=fn_communication_conversation_se_v len=1 word1=converse stemmed1=yes pos1=verb
+type=bl_str_se_verb len=1 word1=convey pos1=verb stemmed1=yes bl_sec=37.7
+type=bl_str_se_verb len=1 word1=coo pos1=verb stemmed1=yes bl_sec=37.3
+type=fn_communication_communication_noise_se_v len=1 word1=coo stemmed1=yes pos1=verb
+type=fn_communication_encoding_se_v len=1 word1=couch stemmed1=yes pos1=verb
+type=bl_str_se_verb len=1 word1=counsel pos1=verb stemmed1=yes bl_sec=37.9
+type=bl_wk_se_verb len=1 word1=count pos1=verb stemmed1=yes bl_sec=29.2
+type=fn_communication_communication_response_se_v len=1 word1=counter stemmed1=yes pos1=verb
+type=fn_communication_commitment_se_n len=1 word1=covenant stemmed1=yes pos1=noun
+type=fn_communication_commitment_se_v len=1 word1=covenant stemmed1=yes pos1=verb
+type=fn_communication_candidness_se_a len=1 word1=coy stemmed1=yes pos1=adj
+type=bl_str_se_verb len=1 word1=crab pos1=verb stemmed1=yes bl_sec=37.8
+type=bl_mod_se_verb len=1 word1=criticize pos1=verb stemmed1=yes bl_sec=33
+type=fn_cognition_judgment_se_v len=1 word1=criticize stemmed1=yes pos1=verb
+type=bl_str_se_verb len=1 word1=croak pos1=verb stemmed1=yes bl_sec=37.3
+type=fn_communication_communication_noise_se_v len=1 word1=croak stemmed1=yes pos1=verb
+type=bl_str_se_verb len=1 word1=croon pos1=verb stemmed1=yes bl_sec=37.3
+type=fn_communication_communication_noise_se_v len=1 word1=croon stemmed1=yes pos1=verb
+type=bl_str_se_verb len=1 word1=crow pos1=verb stemmed1=yes bl_sec=37.3
+type=fn_communication_communication_noise_se_v len=1 word1=crow stemmed1=yes pos1=verb
+type=bl_wk_se_verb len=1 word1=crown pos1=verb stemmed1=yes bl_sec=29.1
+type=bl_wk_se_verb len=1 word1=crown pos1=verb stemmed1=yes bl_sec=29.3
+type=bl_str_se_verb len=1 word1=cry pos1=verb stemmed1=yes bl_sec=37.3
+type=fn_communication_communication_noise_se_v len=1 word1=cry stemmed1=yes pos1=verb
+type=fn_communication_conversation_se_v len=1 word1=debate stemmed1=yes pos1=verb
+type=fn_communication_statement_se_n len=1 word1=declaration stemmed1=yes pos1=noun
+type=bl_str_se_verb len=1 word1=declare pos1=verb stemmed1=yes bl_sec=37.7
+type=bl_wk_se_verb len=1 word1=declare pos1=verb stemmed1=yes bl_sec=29.4
+type=fn_communication_statement_se_v len=1 word1=declare stemmed1=yes pos1=verb
+type=bl_wk_se_verb len=1 word1=decree pos1=verb stemmed1=yes bl_sec=29.3
+type=bl_mod_se_verb len=1 word1=decry pos1=verb stemmed1=yes bl_sec=33
+type=bl_wk_se_verb len=1 word1=deem pos1=verb stemmed1=yes bl_sec=29.1
+type=bl_mod_se_verb len=1 word1=defame pos1=verb stemmed1=yes bl_sec=33
+type=bl_wk_se_verb len=1 word1=define pos1=verb stemmed1=yes bl_sec=29.2
+type=fn_communication_request_se_n len=1 word1=demand stemmed1=yes pos1=noun
+type=fn_communication_request_se_v len=1 word1=demand stemmed1=yes pos1=verb
+type=bl_str_se_verb len=1 word1=demonstrate pos1=verb stemmed1=yes bl_sec=37.1
+type=fn_communication_statement_se_n len=1 word1=denial stemmed1=yes pos1=noun
+type=bl_mod_se_verb len=1 word1=denigrate pos1=verb stemmed1=yes bl_sec=33
+type=bl_mod_se_verb len=1 word1=denounce pos1=verb stemmed1=yes bl_sec=33
+type=bl_wk_se_verb len=1 word1=deny pos1=verb stemmed1=yes bl_sec=29.5
+type=bl_mod_se_verb len=1 word1=deprecate pos1=verb stemmed1=yes bl_sec=33
+type=bl_mod_se_verb len=1 word1=deride pos1=verb stemmed1=yes bl_sec=33
+type=bl_wk_se_verb len=1 word1=describe pos1=verb stemmed1=yes bl_sec=29.2
+type=bl_wk_se_verb len=1 word1=designate pos1=verb stemmed1=yes bl_sec=29.1
+type=bl_wk_se_verb len=1 word1=diagnose pos1=verb stemmed1=yes bl_sec=29.2
+type=fn_communication_conversation_se_n len=1 word1=dialogue stemmed1=yes pos1=noun
+type=bl_str_se_verb len=1 word1=dictate pos1=verb stemmed1=yes bl_sec=37.1
+type=bl_wk_se_verb len=1 word1=discover pos1=verb stemmed1=yes bl_sec=29.5
+type=fn_communication_candidness_se_a len=1 word1=discreet stemmed1=yes pos1=adj
+type=fn_communication_conversation_se_v len=1 word1=discuss stemmed1=yes pos1=verb
+type=fn_communication_conversation_se_n len=1 word1=discussion stemmed1=yes pos1=noun
+type=bl_wk_se_verb len=1 word1=disguise pos1=verb stemmed1=yes bl_sec=29.2
+type=bl_mod_se_verb len=1 word1=disparage pos1=verb stemmed1=yes bl_sec=33
+type=fn_communication_conversation_se_n len=1 word1=dispute stemmed1=yes pos1=noun
+type=fn_communication_statement_se_v len=1 word1=divulge stemmed1=yes pos1=verb
+type=bl_str_se_verb len=1 word1=drawl pos1=verb stemmed1=yes bl_sec=37.3
+type=fn_communication_manner_se_v len=1 word1=drawl stemmed1=yes pos1=verb
+type=bl_str_se_verb len=1 word1=drone pos1=verb stemmed1=yes bl_sec=37.3
+type=fn_communication_communication_noise_se_v len=1 word1=drone stemmed1=yes pos1=verb
+type=bl_wk_se_verb len=1 word1=dub pos1=verb stemmed1=yes bl_sec=29.3
+type=bl_str_se_verb len=1 word1=e-mail pos1=verb stemmed1=yes bl_sec=37.4
+type=fn_communication_volubility_se_a len=1 word1=effusive stemmed1=yes pos1=adj
+type=bl_wk_se_verb len=1 word1=elect pos1=verb stemmed1=yes bl_sec=29.1
+type=bl_wk_se_verb len=1 word1=employ pos1=verb stemmed1=yes bl_sec=29.2
+type=bl_wk_se_verb len=1 word1=engage pos1=verb stemmed1=yes bl_sec=29.2
+type=bl_wk_se_verb len=1 word1=enlist pos1=verb stemmed1=yes bl_sec=29.2
+type=bl_wk_se_verb len=1 word1=enroll pos1=verb stemmed1=yes bl_sec=29.2
+type=bl_wk_se_verb len=1 word1=enter pos1=verb stemmed1=yes bl_sec=29.2
+type=fn_communication_request_se_v len=1 word1=entreat stemmed1=yes pos1=verb
+type=fn_communication_request_se_n len=1 word1=entreaty stemmed1=yes pos1=noun
+type=bl_wk_se_verb len=1 word1=envisage pos1=verb stemmed1=yes bl_sec=29.2
+type=bl_wk_se_verb len=1 word1=establish pos1=verb stemmed1=yes bl_sec=29.2
+type=bl_wk_se_verb len=1 word1=esteem pos1=verb stemmed1=yes bl_sec=29.1
+type=bl_wk_se_verb len=1 word1=esteem pos1=verb stemmed1=yes bl_sec=29.2
+type=bl_mod_se_verb len=1 word1=eulogize pos1=verb stemmed1=yes bl_sec=33
+type=fn_communication_conversation_se_n len=1 word1=exchange stemmed1=yes pos1=noun
+type=fn_communication_statement_se_n len=1 word1=exclamation stemmed1=yes pos1=noun
+type=bl_mod_se_verb len=1 word1=excuse pos1=verb stemmed1=yes bl_sec=33
+type=bl_str_se_verb len=1 word1=explain pos1=verb stemmed1=yes bl_sec=37.1
+type=fn_communication_statement_se_v len=1 word1=explain stemmed1=yes pos1=verb
+type=bl_str_se_verb len=1 word1=explicate pos1=verb stemmed1=yes bl_sec=37.1
+type=fn_communication_candidness_se_a len=1 word1=explicit stemmed1=yes pos1=adj
+type=fn_communication_encoding_se_v len=1 word1=express stemmed1=yes pos1=verb
+type=fn_communication_encoding_se_n len=1 word1=expression stemmed1=yes pos1=noun
+type=bl_mod_se_verb len=1 word1=extol pos1=verb stemmed1=yes bl_sec=33
+type=bl_wk_se_verb len=1 word1=fancy pos1=verb stemmed1=yes bl_sec=29.4
+type=bl_mod_se_verb len=1 word1=fault pos1=verb stemmed1=yes bl_sec=33
+type=bl_str_se_verb len=1 word1=fax pos1=verb stemmed1=yes bl_sec=37.4
+type=bl_wk_se_verb len=1 word1=feel pos1=verb stemmed1=yes bl_sec=29.5
+type=bl_mod_se_verb len=1 word1=felicitate pos1=verb stemmed1=yes bl_sec=33
+type=fn_communication_conversation_se_v len=1 word1=fight stemmed1=yes pos1=verb
+type=bl_wk_se_verb len=1 word1=figure pos1=verb stemmed1=yes bl_sec=29.5
+type=bl_wk_se_verb len=1 word1=find pos1=verb stemmed1=yes bl_sec=29.4
+type=bl_mod_se_verb len=1 word1=fine pos1=verb stemmed1=yes bl_sec=33
+type=bl_mod_se_verb len=1 word1=forgive pos1=verb stemmed1=yes bl_sec=33
+type=fn_communication_encoding_se_v len=1 word1=formulate stemmed1=yes pos1=verb
+type=fn_communication_encoding_se_n len=1 word1=formulation stemmed1=yes pos1=noun
+type=fn_communication_candidness_se_a len=1 word1=forthcoming stemmed1=yes pos1=adj
+type=fn_communication_candidness_se_a len=1 word1=forthright stemmed1=yes pos1=adj
+type=fn_communication_encoding_se_v len=1 word1=frame stemmed1=yes pos1=verb
+type=fn_communication_candidness_se_a len=1 word1=frank stemmed1=yes pos1=adj
+type=bl_str_se_verb len=1 word1=gab pos1=verb stemmed1=yes bl_sec=37.6
+type=bl_str_se_verb len=1 word1=gabble pos1=verb stemmed1=yes bl_sec=37.3
+type=fn_communication_manner_se_v len=1 word1=gabble stemmed1=yes pos1=verb
+type=fn_communication_communication_noise_se_v len=1 word1=gasp stemmed1=yes pos1=verb
+type=fn_communication_gesture_se_v len=1 word1=gesticulate stemmed1=yes pos1=verb
+type=fn_communication_gesture_se_v len=1 word1=gesture stemmed1=yes pos1=verb
+type=bl_str_se_verb len=1 word1=gibber pos1=verb stemmed1=yes bl_sec=37.3
+type=fn_communication_manner_se_v len=1 word1=gibber stemmed1=yes pos1=verb
+type=fn_communication_statement_se_v len=1 word1=gloat stemmed1=yes pos1=verb
+type=fn_body_body-movement_se_v len=1 word1=gnash stemmed1=yes pos1=verb
+type=bl_str_se_verb len=1 word1=gossip pos1=verb stemmed1=yes bl_sec=37.6
+type=fn_communication_conversation_se_n len=1 word1=gossip stemmed1=yes pos1=noun
+type=fn_communication_conversation_se_v len=1 word1=gossip stemmed1=yes pos1=verb
+type=bl_wk_se_verb len=1 word1=grant pos1=verb stemmed1=yes bl_sec=29.5
+type=fn_communication_communication_noise_se_v len=1 word1=grate stemmed1=yes pos1=verb
+type=bl_mod_se_verb len=1 word1=greet pos1=verb stemmed1=yes bl_sec=33
+type=fn_communication_questioning_se_v len=1 word1=grill stemmed1=yes pos1=verb
+type=bl_str_se_verb len=1 word1=gripe pos1=verb stemmed1=yes bl_sec=37.8
+type=fn_communication_statement_se_v len=1 word1=gripe stemmed1=yes pos1=verb
+type=bl_str_se_verb len=1 word1=groan pos1=verb stemmed1=yes bl_sec=37.3
+type=fn_communication_communication_noise_se_v len=1 word1=groan stemmed1=yes pos1=verb
+type=bl_str_se_verb len=1 word1=grouch pos1=verb stemmed1=yes bl_sec=37.8
+type=bl_str_se_verb len=1 word1=grouse pos1=verb stemmed1=yes bl_sec=37.8
+type=bl_str_se_verb len=1 word1=growl pos1=verb stemmed1=yes bl_sec=37.3
+type=fn_communication_communication_noise_se_v len=1 word1=growl stemmed1=yes pos1=verb
+type=bl_str_se_verb len=1 word1=grumble pos1=verb stemmed1=yes bl_sec=37.3
+type=bl_str_se_verb len=1 word1=grumble pos1=verb stemmed1=yes bl_sec=37.8
+type=fn_communication_statement_se_v len=1 word1=grumble stemmed1=yes pos1=verb
+type=bl_str_se_verb len=1 word1=grunt pos1=verb stemmed1=yes bl_sec=37.3
+type=fn_communication_communication_noise_se_v len=1 word1=grunt stemmed1=yes pos1=verb
+type=bl_wk_se_verb len=1 word1=guarantee pos1=verb stemmed1=yes bl_sec=29.5
+type=bl_wk_se_verb len=1 word1=guess pos1=verb stemmed1=yes bl_sec=29.5
+type=fn_communication_communication_noise_se_v len=1 word1=gurgle stemmed1=yes pos1=verb
+type=bl_mod_se_verb len=1 word1=hail pos1=verb stemmed1=yes bl_sec=33
+type=bl_wk_se_verb len=1 word1=hail pos1=verb stemmed1=yes bl_sec=29.2
+type=fn_communication_hear_se_v len=1 word1=hear stemmed1=yes pos1=verb
+type=bl_wk_se_verb len=1 word1=herald pos1=verb stemmed1=yes bl_sec=29.2
+type=bl_wk_se_verb len=1 word1=hire pos1=verb stemmed1=yes bl_sec=29.2
+type=bl_str_se_verb len=1 word1=hiss pos1=verb stemmed1=yes bl_sec=37.3
+type=fn_communication_communication_noise_se_v len=1 word1=hiss stemmed1=yes pos1=verb
+type=bl_wk_se_verb len=1 word1=hold pos1=verb stemmed1=yes bl_sec=29.5
+type=bl_str_se_verb len=1 word1=holler pos1=verb stemmed1=yes bl_sec=37.3
+type=fn_communication_candidness_se_a len=1 word1=honest stemmed1=yes pos1=adj
+type=bl_mod_se_verb len=1 word1=honor pos1=verb stemmed1=yes bl_sec=33
+type=bl_wk_se_verb len=1 word1=honor pos1=verb stemmed1=yes bl_sec=29.2
+type=bl_str_se_verb len=1 word1=hoot pos1=verb stemmed1=yes bl_sec=37.3
+type=fn_communication_communication_noise_se_v len=1 word1=hoot stemmed1=yes pos1=verb
+type=bl_str_se_verb len=1 word1=howl pos1=verb stemmed1=yes bl_sec=37.3
+type=fn_communication_communication_noise_se_v len=1 word1=howl stemmed1=yes pos1=verb
+type=bl_wk_se_verb len=1 word1=identify pos1=verb stemmed1=yes bl_sec=29.2
+type=bl_wk_se_verb len=1 word1=imagine pos1=verb stemmed1=yes bl_sec=29.1
+type=bl_wk_se_verb len=1 word1=imagine pos1=verb stemmed1=yes bl_sec=29.2
+type=bl_mod_se_verb len=1 word1=impeach pos1=verb stemmed1=yes bl_sec=33
+type=fn_communication_request_se_v len=1 word1=implore stemmed1=yes pos1=verb
+type=fn_cognition_invention_se_v len=1 word1=improvise stemmed1=yes pos1=verb
+type=bl_wk_se_verb len=1 word1=incorporate pos1=verb stemmed1=yes bl_sec=29.2
+type=bl_wk_se_verb len=1 word1=induct pos1=verb stemmed1=yes bl_sec=29.2
+type=fn_communication_statement_se_v len=1 word1=inform stemmed1=yes pos1=verb
+type=fn_communication_questioning_se_v len=1 word1=inquire stemmed1=yes pos1=verb
+type=fn_communication_questioning_se_n len=1 word1=inquiry stemmed1=yes pos1=noun
+type=bl_str_se_verb len=1 word1=instruct pos1=verb stemmed1=yes bl_sec=37.9
+type=bl_mod_se_verb len=1 word1=insult pos1=verb stemmed1=yes bl_sec=33
+type=bl_wk_se_verb len=1 word1=intend pos1=verb stemmed1=yes bl_sec=29.2
+type=fn_communication_questioning_se_v len=1 word1=interrogate stemmed1=yes pos1=verb
+type=fn_communication_questioning_se_n len=1 word1=interrogation stemmed1=yes pos1=noun
+type=bl_str_se_verb len=1 word1=jabber pos1=verb stemmed1=yes bl_sec=37.3
+type=fn_communication_manner_se_v len=1 word1=jabber stemmed1=yes pos1=verb
+type=fn_communication_conversation_se_v len=1 word1=joke stemmed1=yes pos1=verb
+type=bl_wk_se_verb len=1 word1=judge pos1=verb stemmed1=yes bl_sec=29.4
+type=bl_wk_se_verb len=1 word1=know pos1=verb stemmed1=yes bl_sec=29.5
+type=bl_str_se_verb len=1 word1=kvetch pos1=verb stemmed1=yes bl_sec=37.8
+type=bl_wk_se_verb len=1 word1=label pos1=verb stemmed1=yes bl_sec=29.3
+type=bl_mod_se_verb len=1 word1=lambaste pos1=verb stemmed1=yes bl_sec=33
+type=bl_wk_se_verb len=1 word1=lampoon pos1=verb stemmed1=yes bl_sec=29.2
+type=bl_mod_se_verb len=1 word1=laud pos1=verb stemmed1=yes bl_sec=33
+type=fn_communication_statement_se_n len=1 word1=lecture stemmed1=yes pos1=noun
+type=fn_communication_statement_se_v len=1 word1=lecture stemmed1=yes pos1=verb
+type=bl_str_se_verb len=1 word1=lilt pos1=verb stemmed1=yes bl_sec=37.3
+type=bl_str_se_verb len=1 word1=lisp pos1=verb stemmed1=yes bl_sec=37.3
+type=fn_communication_manner_se_v len=1 word1=lisp stemmed1=yes pos1=verb
+type=bl_wk_se_verb len=1 word1=maintain pos1=verb stemmed1=yes bl_sec=29.5
+type=bl_wk_se_verb len=1 word1=make pos1=verb stemmed1=yes bl_sec=29.3
+type=bl_mod_se_verb len=1 word1=malign pos1=verb stemmed1=yes bl_sec=33
+type=bl_wk_se_verb len=1 word1=mark pos1=verb stemmed1=yes bl_sec=29.1
+type=bl_wk_se_verb len=1 word1=mean pos1=verb stemmed1=yes bl_sec=29.5
+type=fn_cognition_cogitation_se_v len=1 word1=meditate stemmed1=yes pos1=verb
+type=fn_communication_conversation_se_n len=1 word1=meeting stemmed1=yes pos1=noun
+type=bl_str_se_verb len=1 word1=mention pos1=verb stemmed1=yes bl_sec=37.7
+type=fn_communication_statement_se_n len=1 word1=mention stemmed1=yes pos1=noun
+type=fn_communication_statement_se_v len=1 word1=mention stemmed1=yes pos1=verb
+type=bl_str_se_verb len=1 word1=moan pos1=verb stemmed1=yes bl_sec=37.3
+type=fn_communication_communication_noise_se_v len=1 word1=moan stemmed1=yes pos1=verb
+type=bl_mod_se_verb len=1 word1=mock pos1=verb stemmed1=yes bl_sec=33
+type=bl_str_se_verb len=1 word1=modem pos1=verb stemmed1=yes bl_sec=37.4
+type=fn_communication_gesture_se_v len=1 word1=motion stemmed1=yes pos1=verb
+type=fn_communication_manner_se_v len=1 word1=mouth stemmed1=yes pos1=verb
+type=fn_cognition_cogitation_se_v len=1 word1=mull stemmed1=yes pos1=verb
+type=bl_str_se_verb len=1 word1=mumble pos1=verb stemmed1=yes bl_sec=37.3
+type=fn_communication_manner_se_v len=1 word1=mumble stemmed1=yes pos1=verb
+type=bl_str_se_verb len=1 word1=murmur pos1=verb stemmed1=yes bl_sec=37.3
+type=fn_communication_communication_noise_se_v len=1 word1=murmur stemmed1=yes pos1=verb
+type=fn_cognition_cogitation_se_v len=1 word1=muse stemmed1=yes pos1=verb
+type=bl_str_se_verb len=1 word1=mutter pos1=verb stemmed1=yes bl_sec=37.3
+type=fn_communication_manner_se_v len=1 word1=mutter stemmed1=yes pos1=verb
+type=bl_wk_se_verb len=1 word1=name pos1=verb stemmed1=yes bl_sec=29.3
+type=bl_str_se_verb len=1 word1=narrate pos1=verb stemmed1=yes bl_sec=37.1
+type=fn_communication_manner_se_v len=1 word1=natter stemmed1=yes pos1=verb
+type=bl_str_se_verb len=1 word1=netmail pos1=verb stemmed1=yes bl_sec=37.4
+type=bl_wk_se_verb len=1 word1=nickname pos1=verb stemmed1=yes bl_sec=29.3
+type=fn_communication_gesture_se_v len=1 word1=nod stemmed1=yes pos1=verb
+type=bl_wk_se_verb len=1 word1=nominate pos1=verb stemmed1=yes bl_sec=29.1
+type=bl_str_se_verb len=1 word1=note pos1=verb stemmed1=yes bl_sec=37.7
+type=fn_communication_statement_se_v len=1 word1=notify stemmed1=yes pos1=verb
+type=fn_communication_commitment_se_n len=1 word1=oath stemmed1=yes pos1=noun
+type=bl_str_se_verb len=1 word1=object pos1=verb stemmed1=yes bl_sec=37.8
+type=bl_str_se_verb len=1 word1=observe pos1=verb stemmed1=yes bl_sec=37.7
+type=bl_wk_se_verb len=1 word1=observe pos1=verb stemmed1=yes bl_sec=29.5
+type=bl_wk_se_verb len=1 word1=offer pos1=verb stemmed1=yes bl_sec=29.2
+type=fn_communication_candidness_se_a len=1 word1=open stemmed1=yes pos1=adj
+type=bl_wk_se_verb len=1 word1=oppose pos1=verb stemmed1=yes bl_sec=29.2
+type=bl_wk_se_verb len=1 word1=ordain pos1=verb stemmed1=yes bl_sec=29.1
+type=fn_communication_request_se_n len=1 word1=order stemmed1=yes pos1=noun
+type=fn_communication_request_se_v len=1 word1=order stemmed1=yes pos1=verb
+type=fn_communication_candidness_se_a len=1 word1=outspoken stemmed1=yes pos1=adj
+type=fn_communication_hear_se_v len=1 word1=overhear stemmed1=yes pos1=verb
+type=bl_wk_se_verb len=1 word1=paint pos1=verb stemmed1=yes bl_sec=29.2
+type=bl_mod_se_verb len=1 word1=pardon pos1=verb stemmed1=yes bl_sec=33
+type=bl_mod_se_verb len=1 word1=penalize pos1=verb stemmed1=yes bl_sec=33
+type=bl_mod_se_verb len=1 word1=persecute pos1=verb stemmed1=yes bl_sec=33
+type=bl_str_se_verb len=1 word1=phone pos1=verb stemmed1=yes bl_sec=37.4
+type=fn_communication_encoding_se_v len=1 word1=phrase stemmed1=yes pos1=verb
+type=fn_communication_encoding_se_n len=1 word1=phrasing stemmed1=yes pos1=noun
+type=fn_communication_request_se_n len=1 word1=plea stemmed1=yes pos1=noun
+type=fn_communication_request_se_v len=1 word1=plead stemmed1=yes pos1=verb
+type=fn_communication_commitment_se_n len=1 word1=pledge stemmed1=yes pos1=noun
+type=fn_communication_commitment_se_v len=1 word1=pledge stemmed1=yes pos1=verb
+type=bl_wk_se_verb len=1 word1=portray pos1=verb stemmed1=yes bl_sec=29.2
+type=bl_str_se_verb len=1 word1=pose pos1=verb stemmed1=yes bl_sec=37.1
+type=fn_body_body-movement_se_v len=1 word1=pout stemmed1=yes pos1=verb
+type=bl_mod_se_verb len=1 word1=praise pos1=verb stemmed1=yes bl_sec=33
+type=bl_wk_se_verb len=1 word1=praise pos1=verb stemmed1=yes bl_sec=29.2
+type=fn_communication_manner_se_v len=1 word1=prattle stemmed1=yes pos1=verb
+type=bl_str_se_verb len=1 word1=preach pos1=verb stemmed1=yes bl_sec=37.1
+type=fn_communication_statement_se_v len=1 word1=preach stemmed1=yes pos1=verb
+type=bl_wk_se_verb len=1 word1=presume pos1=verb stemmed1=yes bl_sec=29.4
+type=bl_str_se_verb len=1 word1=proclaim pos1=verb stemmed1=yes bl_sec=37.7
+type=bl_wk_se_verb len=1 word1=proclaim pos1=verb stemmed1=yes bl_sec=29.1
+type=fn_communication_statement_se_n len=1 word1=proclamation stemmed1=yes pos1=noun
+type=bl_wk_se_verb len=1 word1=profess pos1=verb stemmed1=yes bl_sec=29.4
+type=fn_communication_commitment_se_n len=1 word1=promise stemmed1=yes pos1=noun
+type=fn_communication_commitment_se_v len=1 word1=promise stemmed1=yes pos1=verb
+type=fn_communication_statement_se_v len=1 word1=promise stemmed1=yes pos1=verb
+type=bl_wk_se_verb len=1 word1=pronounce pos1=verb stemmed1=yes bl_sec=29.3
+type=fn_communication_statement_se_n len=1 word1=pronouncement stemmed1=yes pos1=noun
+type=fn_communication_statement_se_n len=1 word1=proposal stemmed1=yes pos1=noun
+type=bl_str_se_verb len=1 word1=propose pos1=verb stemmed1=yes bl_sec=37.7
+type=fn_communication_statement_se_n len=1 word1=proposition stemmed1=yes pos1=noun
+type=bl_mod_se_verb len=1 word1=prosecute pos1=verb stemmed1=yes bl_sec=33
+type=bl_wk_se_verb len=1 word1=prove pos1=verb stemmed1=yes bl_sec=29.4
+type=bl_mod_se_verb len=1 word1=punish pos1=verb stemmed1=yes bl_sec=33
+type=bl_str_se_verb len=1 word1=purr pos1=verb stemmed1=yes bl_sec=37.3
+type=fn_communication_communication_noise_se_v len=1 word1=purr stemmed1=yes pos1=verb
+type=fn_communication_encoding_se_v len=1 word1=put stemmed1=yes pos1=verb
+type=bl_wk_se_verb len=1 word1=qualify pos1=verb stemmed1=yes bl_sec=29.2
+type=fn_communication_conversation_se_n len=1 word1=quarrel stemmed1=yes pos1=noun
+type=fn_communication_conversation_se_v len=1 word1=quarrel stemmed1=yes pos1=verb
+type=fn_communication_questioning_se_n len=1 word1=query stemmed1=yes pos1=noun
+type=fn_communication_questioning_se_v len=1 word1=query stemmed1=yes pos1=verb
+type=fn_communication_questioning_se_n len=1 word1=question stemmed1=yes pos1=noun
+type=fn_communication_questioning_se_v len=1 word1=question stemmed1=yes pos1=verb
+type=fn_communication_questioning_se_n len=1 word1=questioning stemmed1=yes pos1=noun
+type=fn_communication_questioning_se_v len=1 word1=quiz stemmed1=yes pos1=verb
+type=bl_str_se_verb len=1 word1=quote pos1=verb stemmed1=yes bl_sec=37.1
+type=bl_str_se_verb len=1 word1=radio pos1=verb stemmed1=yes bl_sec=37.4
+type=bl_str_se_verb len=1 word1=rage pos1=verb stemmed1=yes bl_sec=37.3
+type=bl_wk_se_verb len=1 word1=rank pos1=verb stemmed1=yes bl_sec=29.2
+type=fn_communication_manner_se_v len=1 word1=rant stemmed1=yes pos1=verb
+type=bl_str_se_verb len=1 word1=rap pos1=verb stemmed1=yes bl_sec=37.6
+type=fn_communication_communication_noise_se_v len=1 word1=rap stemmed1=yes pos1=verb
+type=bl_str_se_verb len=1 word1=rasp pos1=verb stemmed1=yes bl_sec=37.3
+type=fn_communication_communication_noise_se_v len=1 word1=rasp stemmed1=yes pos1=verb
+type=bl_wk_se_verb len=1 word1=rate pos1=verb stemmed1=yes bl_sec=29.1
+type=fn_communication_communication_noise_se_v len=1 word1=rattle stemmed1=yes pos1=verb
+type=fn_communication_manner_se_v len=1 word1=rave stemmed1=yes pos1=verb
+type=bl_str_se_verb len=1 word1=read pos1=verb stemmed1=yes bl_sec=37.1
+type=fn_communication_hear_se_v len=1 word1=read stemmed1=yes pos1=verb
+type=bl_mod_se_verb len=1 word1=rebuke pos1=verb stemmed1=yes bl_sec=33
+type=fn_cognition_judgment_se_v len=1 word1=rebuke stemmed1=yes pos1=verb
+type=bl_str_se_verb len=1 word1=recite pos1=verb stemmed1=yes bl_sec=37.1
+type=bl_wk_se_verb len=1 word1=reckon pos1=verb stemmed1=yes bl_sec=29.1
+type=bl_wk_se_verb len=1 word1=recognize pos1=verb stemmed1=yes bl_sec=29.5
+type=bl_wk_se_verb len=1 word1=recollect pos1=verb stemmed1=yes bl_sec=29.2
+type=bl_wk_se_verb len=1 word1=recommend pos1=verb stemmed1=yes bl_sec=29.2
+type=bl_mod_se_verb len=1 word1=recompense pos1=verb stemmed1=yes bl_sec=33
+type=bl_str_se_verb len=1 word1=recount pos1=verb stemmed1=yes bl_sec=37.7
+type=fn_communication_statement_se_v len=1 word1=recount stemmed1=yes pos1=verb
+type=fn_cognition_cogitation_se_v len=1 word1=reflect stemmed1=yes pos1=verb
+type=bl_wk_se_verb len=1 word1=regard pos1=verb stemmed1=yes bl_sec=29.2
+type=bl_wk_se_verb len=1 word1=reinstate pos1=verb stemmed1=yes bl_sec=29.2
+type=bl_str_se_verb len=1 word1=reiterate pos1=verb stemmed1=yes bl_sec=37.7
+type=bl_wk_se_verb len=1 word1=reject pos1=verb stemmed1=yes bl_sec=29.2
+type=fn_communication_communication_response_se_v len=1 word1=rejoin stemmed1=yes pos1=verb
+type=fn_communication_communication_response_se_n len=1 word1=rejoinder stemmed1=yes pos1=noun
+type=bl_str_se_verb len=1 word1=relate pos1=verb stemmed1=yes bl_sec=37.7
+type=fn_communication_statement_se_v len=1 word1=relate stemmed1=yes pos1=verb
+type=bl_str_se_verb len=1 word1=relay pos1=verb stemmed1=yes bl_sec=37.1
+type=bl_str_se_verb len=1 word1=relay pos1=verb stemmed1=yes bl_sec=37.4
+type=bl_str_se_verb len=1 word1=remark pos1=verb stemmed1=yes bl_sec=37.7
+type=fn_communication_statement_se_n len=1 word1=remark stemmed1=yes pos1=noun
+type=fn_communication_statement_se_v len=1 word1=remark stemmed1=yes pos1=verb
+type=bl_wk_se_verb len=1 word1=remember pos1=verb stemmed1=yes bl_sec=29.2
+type=bl_mod_se_verb len=1 word1=remunerate pos1=verb stemmed1=yes bl_sec=33
+type=bl_mod_se_verb len=1 word1=repay pos1=verb stemmed1=yes bl_sec=33
+type=bl_str_se_verb len=1 word1=repeat pos1=verb stemmed1=yes bl_sec=37.7
+type=fn_communication_communication_response_se_n len=1 word1=reply stemmed1=yes pos1=noun
+type=fn_communication_communication_response_se_v len=1 word1=reply stemmed1=yes pos1=verb
+type=bl_str_se_verb len=1 word1=report pos1=verb stemmed1=yes bl_sec=37.7
+type=bl_wk_se_verb len=1 word1=report pos1=verb stemmed1=yes bl_sec=29.1
+type=fn_communication_statement_se_n len=1 word1=report stemmed1=yes pos1=noun
+type=fn_communication_statement_se_v len=1 word1=report stemmed1=yes pos1=verb
+type=bl_wk_se_verb len=1 word1=represent pos1=verb stemmed1=yes bl_sec=29.2
+type=bl_mod_se_verb len=1 word1=reprimand pos1=verb stemmed1=yes bl_sec=33
+type=fn_cognition_judgment_se_v len=1 word1=reprimand stemmed1=yes pos1=verb
+type=bl_mod_se_verb len=1 word1=reproach pos1=verb stemmed1=yes bl_sec=33
+type=fn_cognition_judgment_se_v len=1 word1=reproach stemmed1=yes pos1=verb
+type=bl_mod_se_verb len=1 word1=reprove pos1=verb stemmed1=yes bl_sec=33
+type=bl_wk_se_verb len=1 word1=repudiate pos1=verb stemmed1=yes bl_sec=29.2
+type=bl_wk_se_verb len=1 word1=repute pos1=verb stemmed1=yes bl_sec=29.5
+type=fn_communication_request_se_n len=1 word1=request stemmed1=yes pos1=noun
+type=fn_communication_request_se_v len=1 word1=request stemmed1=yes pos1=verb
+type=fn_communication_communication_response_se_v len=1 word1=respond stemmed1=yes pos1=verb
+type=fn_communication_communication_response_se_n len=1 word1=response stemmed1=yes pos1=noun
+type=fn_communication_volubility_se_a len=1 word1=reticent stemmed1=yes pos1=adj
+type=fn_communication_communication_response_se_n len=1 word1=retort stemmed1=yes pos1=noun
+type=fn_communication_communication_response_se_v len=1 word1=retort stemmed1=yes pos1=verb
+type=bl_str_se_verb len=1 word1=reveal pos1=verb stemmed1=yes bl_sec=37.7
+type=bl_wk_se_verb len=1 word1=reveal pos1=verb stemmed1=yes bl_sec=29.2
+type=fn_communication_statement_se_n len=1 word1=revelation stemmed1=yes pos1=noun
+type=bl_mod_se_verb len=1 word1=revile pos1=verb stemmed1=yes bl_sec=33
+type=bl_mod_se_verb len=1 word1=reward pos1=verb stemmed1=yes bl_sec=33
+type=bl_mod_se_verb len=1 word1=ridicule pos1=verb stemmed1=yes bl_sec=33
+type=fn_communication_communication_response_se_n len=1 word1=riposte stemmed1=yes pos1=noun
+type=bl_str_se_verb len=1 word1=roar pos1=verb stemmed1=yes bl_sec=37.3
+type=fn_communication_communication_noise_se_v len=1 word1=roar stemmed1=yes pos1=verb
+type=fn_communication_conversation_se_n len=1 word1=row stemmed1=yes pos1=noun
+type=fn_communication_conversation_se_v len=1 word1=row stemmed1=yes pos1=verb
+type=bl_wk_se_verb len=1 word1=rule pos1=verb stemmed1=yes bl_sec=29.3
+type=bl_str_se_verb len=1 word1=rumble pos1=verb stemmed1=yes bl_sec=37.3
+type=fn_communication_communication_noise_se_v len=1 word1=rumble stemmed1=yes pos1=verb
+type=fn_cognition_cogitation_se_v len=1 word1=ruminate stemmed1=yes pos1=verb
+type=bl_mod_se_verb len=1 word1=salute pos1=verb stemmed1=yes bl_sec=33
+type=bl_wk_se_verb len=1 word1=salute pos1=verb stemmed1=yes bl_sec=29.2
+type=bl_str_se_verb len=1 word1=satellite pos1=verb stemmed1=yes bl_sec=37.4
+type=bl_str_se_verb len=1 word1=say pos1=verb stemmed1=yes bl_sec=37.7
+type=fn_communication_statement_se_v len=1 word1=say stemmed1=yes pos1=verb
+type=bl_str_se_verb len=1 word1=schmooze pos1=verb stemmed1=yes bl_sec=37.6
+type=fn_cognition_judgment_se_v len=1 word1=scoff stemmed1=yes pos1=verb
+type=bl_mod_se_verb len=1 word1=scold pos1=verb stemmed1=yes bl_sec=33
+type=fn_cognition_judgment_se_v len=1 word1=scold stemmed1=yes pos1=verb
+type=bl_mod_se_verb len=1 word1=scorn pos1=verb stemmed1=yes bl_sec=33
+type=fn_cognition_judgment_se_v len=1 word1=scorn stemmed1=yes pos1=verb
+type=bl_str_se_verb len=1 word1=scream pos1=verb stemmed1=yes bl_sec=37.3
+type=fn_communication_communication_noise_se_v len=1 word1=scream stemmed1=yes pos1=verb
+type=bl_str_se_verb len=1 word1=screech pos1=verb stemmed1=yes bl_sec=37.3
+type=fn_communication_communication_noise_se_v len=1 word1=screech stemmed1=yes pos1=verb
+type=fn_communication_candidness_se_a len=1 word1=secretive stemmed1=yes pos1=adj
+type=bl_wk_se_verb len=1 word1=see pos1=verb stemmed1=yes bl_sec=29.2
+type=bl_wk_se_verb len=1 word1=select pos1=verb stemmed1=yes bl_sec=29.2
+type=bl_str_se_verb len=1 word1=semaphore pos1=verb stemmed1=yes bl_sec=37.4
+type=bl_mod_se_verb len=1 word1=shame pos1=verb stemmed1=yes bl_sec=33
+type=bl_str_se_verb len=1 word1=shout pos1=verb stemmed1=yes bl_sec=37.3
+type=fn_communication_manner_se_v len=1 word1=shout stemmed1=yes pos1=verb
+type=bl_str_se_verb len=1 word1=show pos1=verb stemmed1=yes bl_sec=37.1
+type=bl_wk_se_verb len=1 word1=show pos1=verb stemmed1=yes bl_sec=29.5
+type=bl_str_se_verb len=1 word1=shriek pos1=verb stemmed1=yes bl_sec=37.3
+type=fn_communication_communication_noise_se_v len=1 word1=shriek stemmed1=yes pos1=verb
+type=fn_communication_communication_noise_se_v len=1 word1=shrill stemmed1=yes pos1=verb
+type=fn_body_body-movement_se_v len=1 word1=shrug stemmed1=yes pos1=verb
+type=bl_str_se_verb len=1 word1=sign pos1=verb stemmed1=yes bl_sec=37.4
+type=bl_str_se_verb len=1 word1=signal pos1=verb stemmed1=yes bl_sec=37.4
+type=fn_communication_gesture_se_v len=1 word1=signal stemmed1=yes pos1=verb
+type=fn_communication_volubility_se_a len=1 word1=silent stemmed1=yes pos1=adj
+type=fn_communication_manner_se_v len=1 word1=simper stemmed1=yes pos1=verb
+type=fn_communication_candidness_se_a len=1 word1=sincere stemmed1=yes pos1=adj
+type=bl_str_se_verb len=1 word1=sing pos1=verb stemmed1=yes bl_sec=37.3
+type=fn_communication_manner_se_v len=1 word1=sing stemmed1=yes pos1=verb
+type=fn_communication_manner_se_v len=1 word1=slur stemmed1=yes pos1=verb
+type=fn_body_body-movement_se_v len=1 word1=smirk stemmed1=yes pos1=verb
+type=bl_str_se_verb len=1 word1=snap pos1=verb stemmed1=yes bl_sec=37.3
+type=bl_str_se_verb len=1 word1=snarl pos1=verb stemmed1=yes bl_sec=37.3
+type=fn_communication_communication_noise_se_v len=1 word1=snarl stemmed1=yes pos1=verb
+type=fn_communication_communication_noise_se_v len=1 word1=snort stemmed1=yes pos1=verb
+type=bl_mod_se_verb len=1 word1=snub pos1=verb stemmed1=yes bl_sec=33
+type=bl_str_se_verb len=1 word1=snuffle pos1=verb stemmed1=yes bl_sec=37.3
+type=bl_str_se_verb len=1 word1=speak pos1=verb stemmed1=yes bl_sec=37.5
+type=fn_communication_conversation_se_v len=1 word1=speak stemmed1=yes pos1=verb
+type=fn_communication_statement_se_v len=1 word1=speak stemmed1=yes pos1=verb
+type=bl_str_se_verb len=1 word1=splutter pos1=verb stemmed1=yes bl_sec=37.3
+type=fn_communication_communication_noise_se_v len=1 word1=splutter stemmed1=yes pos1=verb
+type=fn_communication_communication_noise_se_v len=1 word1=sputter stemmed1=yes pos1=verb
+type=fn_communication_conversation_se_v len=1 word1=squabble stemmed1=yes pos1=verb
+type=bl_str_se_verb len=1 word1=squall pos1=verb stemmed1=yes bl_sec=37.3
+type=bl_str_se_verb len=1 word1=squawk pos1=verb stemmed1=yes bl_sec=37.3
+type=fn_communication_communication_noise_se_v len=1 word1=squawk stemmed1=yes pos1=verb
+type=bl_str_se_verb len=1 word1=squeak pos1=verb stemmed1=yes bl_sec=37.3
+type=fn_communication_communication_noise_se_v len=1 word1=squeak stemmed1=yes pos1=verb
+type=bl_str_se_verb len=1 word1=squeal pos1=verb stemmed1=yes bl_sec=37.3
+type=fn_communication_communication_noise_se_v len=1 word1=squeal stemmed1=yes pos1=verb
+type=bl_str_se_verb len=1 word1=stammer pos1=verb stemmed1=yes bl_sec=37.3
+type=fn_communication_manner_se_v len=1 word1=stammer stemmed1=yes pos1=verb
+type=bl_wk_se_verb len=1 word1=stamp pos1=verb stemmed1=yes bl_sec=29.3
+type=bl_str_se_verb len=1 word1=state pos1=verb stemmed1=yes bl_sec=37.7
+type=fn_communication_statement_se_n len=1 word1=statement stemmed1=yes pos1=noun
+type=bl_wk_se_verb len=1 word1=stigmatize pos1=verb stemmed1=yes bl_sec=29.2
+type=fn_communication_candidness_se_a len=1 word1=straightforward stemmed1=yes pos1=adj
+type=bl_str_se_verb len=1 word1=stutter pos1=verb stemmed1=yes bl_sec=37.3
+type=fn_communication_manner_se_v len=1 word1=stutter stemmed1=yes pos1=verb
+type=bl_wk_se_verb len=1 word1=style pos1=verb stemmed1=yes bl_sec=29.3
+type=bl_str_se_verb len=1 word1=suggest pos1=verb stemmed1=yes bl_sec=37.7
+type=fn_communication_request_se_n len=1 word1=suggestion stemmed1=yes pos1=noun
+type=fn_communication_request_se_v len=1 word1=summon stemmed1=yes pos1=verb
+type=bl_wk_se_verb len=1 word1=suppose pos1=verb stemmed1=yes bl_sec=29.4
+type=bl_wk_se_verb len=1 word1=suspect pos1=verb stemmed1=yes bl_sec=29.5
+type=fn_communication_commitment_se_v len=1 word1=swear stemmed1=yes pos1=verb
+type=bl_wk_se_verb len=1 word1=take pos1=verb stemmed1=yes bl_sec=29.2
+type=bl_str_se_verb len=1 word1=talk pos1=verb stemmed1=yes bl_sec=37.5
+type=fn_communication_conversation_se_v len=1 word1=talk stemmed1=yes pos1=verb
+type=fn_communication_statement_se_v len=1 word1=talk stemmed1=yes pos1=verb
+type=bl_str_se_verb len=1 word1=teach pos1=verb stemmed1=yes bl_sec=37.1
+type=bl_str_se_verb len=1 word1=telecast pos1=verb stemmed1=yes bl_sec=37.4
+type=bl_str_se_verb len=1 word1=telegraph pos1=verb stemmed1=yes bl_sec=37.4
+type=bl_str_se_verb len=1 word1=telephone pos1=verb stemmed1=yes bl_sec=37.4
+type=bl_str_se_verb len=1 word1=telex pos1=verb stemmed1=yes bl_sec=37.4
+type=bl_str_se_verb len=1 word1=tell pos1=verb stemmed1=yes bl_sec=37.1
+type=bl_str_se_verb len=1 word1=tell pos1=verb stemmed1=yes bl_sec=37.2
+type=fn_communication_request_se_v len=1 word1=tell stemmed1=yes pos1=verb
+type=fn_communication_statement_se_v len=1 word1=tell stemmed1=yes pos1=verb
+type=bl_wk_se_verb len=1 word1=term pos1=verb stemmed1=yes bl_sec=29.3
+type=bl_mod_se_verb len=1 word1=thank pos1=verb stemmed1=yes bl_sec=33
+type=bl_wk_se_verb len=1 word1=think pos1=verb stemmed1=yes bl_sec=29.4
+type=fn_communication_commitment_se_n len=1 word1=threat stemmed1=yes pos1=noun
+type=fn_communication_commitment_se_v len=1 word1=threaten stemmed1=yes pos1=verb
+type=bl_str_se_verb len=1 word1=thunder pos1=verb stemmed1=yes bl_sec=37.3
+type=fn_communication_communication_noise_se_v len=1 word1=thunder stemmed1=yes pos1=verb
+type=fn_communication_conversation_se_n len=1 word1=tiff stemmed1=yes pos1=noun
+type=bl_str_se_verb len=1 word1=tisk pos1=verb stemmed1=yes bl_sec=37.3
+type=bl_mod_se_verb len=1 word1=toast pos1=verb stemmed1=yes bl_sec=33
+type=bl_wk_se_verb len=1 word1=train pos1=verb stemmed1=yes bl_sec=29.2
+type=bl_wk_se_verb len=1 word1=treat pos1=verb stemmed1=yes bl_sec=29.2
+type=bl_str_se_verb len=1 word1=trill pos1=verb stemmed1=yes bl_sec=37.3
+type=fn_communication_communication_noise_se_v len=1 word1=trill stemmed1=yes pos1=verb
+type=bl_str_se_verb len=1 word1=trumpet pos1=verb stemmed1=yes bl_sec=37.3
+type=fn_communication_communication_noise_se_v len=1 word1=trumpet stemmed1=yes pos1=verb
+type=fn_communication_candidness_se_a len=1 word1=truthful stemmed1=yes pos1=adj
+type=bl_str_se_verb len=1 word1=twitter pos1=verb stemmed1=yes bl_sec=37.3
+type=fn_communication_communication_noise_se_v len=1 word1=twitter stemmed1=yes pos1=verb
+type=fn_communication_commitment_se_v len=1 word1=undertake stemmed1=yes pos1=verb
+type=fn_communication_commitment_se_n len=1 word1=undertaking stemmed1=yes pos1=noun
+type=bl_mod_se_verb len=1 word1=upbraid pos1=verb stemmed1=yes bl_sec=33
+type=fn_communication_request_se_v len=1 word1=urge stemmed1=yes pos1=verb
+type=bl_wk_se_verb len=1 word1=use pos1=verb stemmed1=yes bl_sec=29.2
+type=bl_wk_se_verb len=1 word1=value pos1=verb stemmed1=yes bl_sec=29.2
+type=bl_mod_se_verb len=1 word1=victimize pos1=verb stemmed1=yes bl_sec=33
+type=bl_wk_se_verb len=1 word1=view pos1=verb stemmed1=yes bl_sec=29.2
+type=bl_mod_se_verb len=1 word1=vilify pos1=verb stemmed1=yes bl_sec=33
+type=bl_wk_se_verb len=1 word1=visualize pos1=verb stemmed1=yes bl_sec=29.2
+type=fn_communication_encoding_se_v len=1 word1=voice stemmed1=yes pos1=verb
+type=fn_communication_commitment_se_v len=1 word1=volunteer stemmed1=yes pos1=verb
+type=bl_wk_se_verb len=1 word1=vote pos1=verb stemmed1=yes bl_sec=29.3
+type=fn_communication_commitment_se_n len=1 word1=vow stemmed1=yes pos1=noun
+type=bl_str_se_verb len=1 word1=wail pos1=verb stemmed1=yes bl_sec=37.3
+type=fn_communication_communication_noise_se_v len=1 word1=wail stemmed1=yes pos1=verb
+type=bl_wk_se_verb len=1 word1=want pos1=verb stemmed1=yes bl_sec=29.1
+type=bl_str_se_verb len=1 word1=warble pos1=verb stemmed1=yes bl_sec=37.3
+type=fn_communication_communication_noise_se_v len=1 word1=warble stemmed1=yes pos1=verb
+type=bl_str_se_verb len=1 word1=warn pos1=verb stemmed1=yes bl_sec=37.9
+type=bl_wk_se_verb len=1 word1=warrant pos1=verb stemmed1=yes bl_sec=29.4
+type=fn_communication_gesture_se_v len=1 word1=wave stemmed1=yes pos1=verb
+type=bl_mod_se_verb len=1 word1=welcome pos1=verb stemmed1=yes bl_sec=33
+type=bl_str_se_verb len=1 word1=wheeze pos1=verb stemmed1=yes bl_sec=37.3
+type=fn_communication_communication_noise_se_v len=1 word1=wheeze stemmed1=yes pos1=verb
+type=bl_str_se_verb len=1 word1=whimper pos1=verb stemmed1=yes bl_sec=37.3
+type=fn_communication_communication_noise_se_v len=1 word1=whimper stemmed1=yes pos1=verb
+type=bl_str_se_verb len=1 word1=whine pos1=verb stemmed1=yes bl_sec=37.3
+type=fn_communication_communication_noise_se_v len=1 word1=whine stemmed1=yes pos1=verb
+type=bl_str_se_verb len=1 word1=whisper pos1=verb stemmed1=yes bl_sec=37.3
+type=fn_communication_manner_se_v len=1 word1=whisper stemmed1=yes pos1=verb
+type=bl_str_se_verb len=1 word1=whistle pos1=verb stemmed1=yes bl_sec=37.3
+type=bl_str_se_verb len=1 word1=whoop pos1=verb stemmed1=yes bl_sec=37.3
+type=fn_communication_communication_noise_se_v len=1 word1=whoop stemmed1=yes pos1=verb
+type=bl_str_se_verb len=1 word1=wire pos1=verb stemmed1=yes bl_sec=37.4
+type=bl_str_se_verb len=1 word1=wireless pos1=verb stemmed1=yes bl_sec=37.4
+type=fn_communication_encoding_se_v len=1 word1=word stemmed1=yes pos1=verb
+type=fn_communication_encoding_se_n len=1 word1=wording stemmed1=yes pos1=noun
+type=bl_str_se_verb len=1 word1=write pos1=verb stemmed1=yes bl_sec=37.1
+type=fn_communication_statement_se_v len=1 word1=write stemmed1=yes pos1=verb
+type=bl_str_se_verb len=1 word1=yak pos1=verb stemmed1=yes bl_sec=37.6
+type=bl_str_se_verb len=1 word1=yammer pos1=verb stemmed1=yes bl_sec=37.3
+type=bl_str_se_verb len=1 word1=yap pos1=verb stemmed1=yes bl_sec=37.3
+type=bl_str_se_verb len=1 word1=yell pos1=verb stemmed1=yes bl_sec=37.3
+type=fn_communication_communication_noise_se_v len=1 word1=yell stemmed1=yes pos1=verb
+type=bl_str_se_verb len=1 word1=yelp pos1=verb stemmed1=yes bl_sec=37.3
+type=fn_communication_communication_noise_se_v len=1 word1=yelp stemmed1=yes pos1=verb
+type=bl_str_se_verb len=1 word1=yodel pos1=verb stemmed1=yes bl_sec=37.3

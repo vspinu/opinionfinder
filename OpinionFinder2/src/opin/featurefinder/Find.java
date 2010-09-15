@@ -15,7 +15,7 @@ public class Find {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		
+		/*
 		Matcher matcher = new Matcher();
 
 		File dictFile=null;
@@ -65,17 +65,17 @@ public class Find {
 		ArrayList<File> deps = new ArrayList<File>();
 		ArrayList<File> senSplits = new ArrayList<File>();
 		ArrayList<File> instances = new ArrayList<File>();
-		Reader.readDocList(doclistFile, instanceFileName, docs, deps, senSplits, instances);
+		ReaderUtils.readDocList(doclistFile, instanceFileName, docs, deps, senSplits, instances);
 		
 		ArrayList<Entry> patterns = null;
 		if(type.equals("tff")){
-			patterns = Reader.createPatternsFromLexiconWithTffAttributes(dictFile,attFile);
+			patterns = ReaderUtils.createPatternsFromLexiconWithTffAttributes(dictFile,attFile);
 		}
 		else if(type.equals("ruppenhofer")){
-			patterns = Reader.createPatternsFromLexiconWithRuppenhoferAttributes(dictFile,attFile);
+			patterns = ReaderUtils.createPatternsFromLexiconWithRuppenhoferAttributes(dictFile,attFile);
 		}
 		
-		HashMap<String, HashSet<String>> expansions=Reader.readExpansionFile(expansionFile);
+		HashMap<String, HashSet<String>> expansions=ReaderUtils.readExpansionFile(expansionFile);
 		matcher.setExpansions(expansions);
 		
 		ArrayList<Sentence> sentences;
@@ -85,7 +85,7 @@ public class Find {
 			
 			if(depFile.exists()){
 				matches=new ArrayList<Match>(); 
-				sentences=Reader.createSentencesFromDepFile(depFile);
+				sentences=ReaderUtils.createSentencesFromDepFile(depFile);
 				for (Iterator<Sentence> itr = sentences.iterator();itr.hasNext();) {
 					matcher.setSentence(itr.next());
 					//System.out.println(j++);
@@ -94,12 +94,12 @@ public class Find {
 						matcher.match(matches);
 					}					
 				}
-				Writer.writeInstancesToFile(instances.get(i), matches);
+				WriterUtils.writeInstancesToFile(instances.get(i), matches);
 			}
 			else{
 				System.out.println("Dependency file does not exist: "+depFile.getAbsolutePath());
 			}			
-		}
+		}*/
 
 	}
 
