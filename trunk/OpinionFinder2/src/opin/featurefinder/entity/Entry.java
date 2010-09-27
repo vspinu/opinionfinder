@@ -112,6 +112,12 @@ public class Entry {
 		this.attributes.put(k, v);
 	}
 	
+        @Override
+        public String toString() {
+
+            return attributes.toString();
+
+        }
 	
 	/*
 	public void createRelationMatrix(){

@@ -1,0 +1,2 @@
+E:\Users\conrada\netbeans_svn\OpinionFinder\OpinionFinder2\lib\featurefiles\valenceshifters.tff
+E:\Users\conrada\netbeans_svn\OpinionFinder\OpinionFinder2\lib\featurefiles\intensifiers2.tff
