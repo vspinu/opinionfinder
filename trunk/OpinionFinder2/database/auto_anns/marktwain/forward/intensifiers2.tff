@@ -1,0 +1,5 @@
+ID0	27,31	string	matchfeat	type="intensifier"	pattern="%more||adj||n%"
+ID1	370,375	string	matchfeat	type="intensifier"	pattern="%quite||adverb||n%"
+ID2	938,942	string	matchfeat	type="intensifier"	pattern="%more||adj||n%"
+ID3	1063,1067	string	matchfeat	type="intensifier"	pattern="%most||adj||n%"
+ID4	1183,1191	string	matchfeat	type="intensifier"	pattern="%complete||adj||n%"

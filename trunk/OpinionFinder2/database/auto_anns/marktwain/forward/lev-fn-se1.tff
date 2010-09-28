@@ -1,0 +1,7 @@
+ID0	38,46	string	matchfeat	type="bl_str_se_verb"	pattern="%reveal||verb||yes%"
+ID1	288,295	string	matchfeat	type="bl_str_se_verb"	pattern="%write||verb||yes%"
+ID2	410,418	string	matchfeat	type="fn_cognition_cogitation_se_v"	pattern="%reflect||verb||yes%"
+ID3	628,633	string	matchfeat	type="bl_str_se_verb"	pattern="%speak||verb||yes%"
+ID4	1030,1034	string	matchfeat	type="bl_wk_se_verb"	pattern="%use||verb||yes%"
+ID5	1052,1061	string	matchfeat	type="bl_str_se_verb"	pattern="%mention||verb||yes%"
+ID6	1232,1236	string	matchfeat	type="bl_str_se_verb"	pattern="%say||verb||yes%"

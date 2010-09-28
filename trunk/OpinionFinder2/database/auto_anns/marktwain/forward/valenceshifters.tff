@@ -1,0 +1,4 @@
+ID0	0,7	string	matchfeat	type="negation"	pattern="%nowhere||anypos||n%"
+ID1	230,232	string	matchfeat	type="negation"	pattern="%no||anypos||n%"
+ID2	569,571	string	matchfeat	type="negation"	pattern="%no||anypos||n%"
+ID3	728,731	string	matchfeat	type="negation"	pattern="%not||anypos||n%"

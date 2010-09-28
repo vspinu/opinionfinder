@@ -45,7 +45,8 @@ public class PatternOccurrences {
 			e.printStackTrace();
 		}
 	}
-	
+        
+	/*
 	public static void main(String[] args) {		
 		explore();
 		//createPPS();				
@@ -273,6 +274,7 @@ public class PatternOccurrences {
 		}
 		}
 	}
+        */
 	
 	
 	public static void persistObject(ArrayList<Doc> docs) throws Exception{
