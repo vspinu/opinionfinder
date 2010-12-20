@@ -12,6 +12,8 @@ import java.io.BufferedReader;
 import java.io.FileWriter;
 import java.io.BufferedWriter;
 import java.io.IOException;
+import java.io.FileNotFoundException;
+import java.io.File;
 
 /**
  * This class removes all markup from HTML and XML files, replacing this markup
@@ -22,9 +24,26 @@ import java.io.IOException;
 public class TextExtract {
 
     public static final int BLOCK_SIZE = 80;
+    public static String posix_patterns = "\\p{Lower}\\p{Upper}\\p{ASCII}" +
+            "\\p{Alpha}\\p{Digit}\\p{Alnum}\\p{Punct}\\p{Graph}\\p{Print}" +
+            "\\p{Blank}\\p{Cntrl}\\p{XDigit}\\p{Space}";
     public static String markup_pattern = "(?i)(<[^<>]*>)";
-    public static String markup_script_style_pattern =
-            "(?i)([\"<script[^<]*<\\\\script>\"]|[\"<style[^<]*<\\\\style>\"])";
+    ///*
+    public static String markup_script_pattern =
+            "(?i)((<script)([^\"</script>\"])*(</script>))";
+    public static String markup_style_pattern =
+            "(?i)((<style)([^\"</style>\"])*(</style>))";
+
+    //(<(?:script|style)[^>]+>(?:[^<]+<\/(?:script|style)[^>]+>)?)
+    //public static String markup_style_pattern = "(<(?:script|style)[^>]+>(?:[^<]+<(?:script|style)[^>]*>)?)";
+
+    //*/
+    /*
+    public static String markup_script_pattern =
+            "(?i)((<script)([^<>])*(</script>))";
+    public static String markup_style_pattern =
+            "(?i)((<style)([^<>])*(</style>))";
+    //*/
     public static String replacement = " ";
 
     // for testing purposes only
@@ -35,6 +54,11 @@ public class TextExtract {
         // extract all ideological debates for easier reading
         String debPath = "E:\\Users\\conrada\\Documents\\" +
                 "subjectivity_research\\swapna_debates\\";
+        String debPathEdit = "E:\\Users\\conrada\\Documents\\subjectivity_research\\healthcare_editorial_docs\\";
+        String debPathBlog = "E:\\Users\\conrada\\Documents\\subjectivity_research\\healthcare_blog_docs\\";
+        String debPathDebate = "E:\\Users\\conrada\\Documents\\subjectivity_research\\healthcare_debate_docs\\";
+        String debPathDebateLong = "E:\\Users\\conrada\\Documents\\subjectivity_research\\healthcare_long_debate_docs\\";
+
         /*
         // healthcare debates
         removeMarkup(debPath+"healthcare\\healthcare",
@@ -51,6 +75,7 @@ public class TextExtract {
                 debPath+"healthcare\\Universal_Healthcare_clean");
         */
 
+        /*
         // existence of god debates
         removeMarkup(debPath+"god\\Do_you_believe_in_God_2",
                 debPath+"god\\Do_you_believe_in_God_2_clean");
@@ -60,7 +85,87 @@ public class TextExtract {
                 debPath+"god\\Is_belief_in_God_for_the_GREATER_GOOD_clean");
         removeMarkup(debPath+"god\\Is_life_believing_in_God_worth_it",
                 debPath+"god\\Is_life_believing_in_God_worth_it_clean");
-        
+        */
+
+        // first round of new healthcare corpus
+        //removeMarkup(debPathEdit+"html\\www.cleveland.com opinion index.ssf 2010 03 latest_health_care_reform_bill.html", debPathEdit+"clean\\www.cleveland.com opinion index.ssf 2010 03 latest_health_care_reform_bill.html");
+        //removeMarkup(debPathEdit+"html\\Barack Obama and Tom Daschle should fix health care step by step.htm", debPathEdit+"clean\\Barack Obama and Tom Daschle should fix health care step by step.htm");
+
+        File debPathEditFile = new File(debPathEdit+"html");
+        File[] debPathEditList = debPathEditFile.listFiles();
+        /*
+        for (File file : debPathEditList) {
+            try {
+                System.out.println("filename: "+file.getCanonicalPath());
+            } catch (IOException e) {
+                e.printStackTrace();
+                System.exit(1);
+            }
+        }
+        */
+
+        ///*
+        for (File file : debPathEditList) {
+            try {
+                if (file.exists() && file.getName().contains(".htm")) {
+                    removeMarkup(file.getCanonicalPath(), debPathEdit+"clean\\"+file.getName());
+                }
+            } catch (FileNotFoundException e) {
+                System.out.println("can't find file: "+file);
+            } catch (IOException e) {
+                e.printStackTrace();
+                //System.exit(-1);
+            }
+        }
+
+        File debPathBlogFile = new File(debPathBlog+"html");
+        File[] debPathBlogList = debPathBlogFile.listFiles();
+        for (File file : debPathBlogList) {
+            try {
+                if (file.exists() && file.getName().contains(".htm")) {
+                    removeMarkup(file.getCanonicalPath(), debPathBlog+"clean\\"+file.getName());
+                }
+            } catch (FileNotFoundException e) {
+                System.out.println("can't find file: "+file);
+            } catch (IOException e) {
+                e.printStackTrace();
+                System.exit(-1);
+            }
+        }
+
+        File debPathDebateFile = new File(debPathDebate+"html");
+        File[] debPathDebateList = debPathDebateFile.listFiles();
+        for (File file : debPathDebateList) {
+            try {
+                if (file.exists() && file.getName().contains(".htm")) {
+                    removeMarkup(file.getCanonicalPath(), debPathDebate+"clean\\"+file.getName());
+                }
+            } catch (FileNotFoundException e) {
+                System.out.println("can't find file: "+file);
+            } catch (IOException e) {
+                e.printStackTrace();
+                System.exit(-1);
+            }
+        }
+
+        File debPathDebateLongFile = new File(debPathDebateLong+"html");
+        File[] debPathDebateLongList = debPathDebateLongFile.listFiles();
+        for (File file : debPathDebateLongList) {
+            try {
+                if (file.exists() && file.getName().contains(".htm")) {
+                    removeMarkup(file.getCanonicalPath(), debPathDebateLong+"clean\\"+file.getName());
+                }
+            } catch (FileNotFoundException e) {
+                System.out.println("can't find file: "+file);
+            } catch (IOException e) {
+                e.printStackTrace();
+                System.exit(-1);
+            }
+        }
+        //*/
+
+        //removeMarkup(debPathEdit+"html\\0001.htm", debPathEdit+"clean\\0001.txt");
+
     }
 
     public static String removeMarkup(String inFilename, String outFilename) {
@@ -78,6 +183,7 @@ public class TextExtract {
                 inFileContents.append(charBlock, 0, numCharsRead);
             }
             fileContents = inFileContents.toString();
+            inFile.close();
 
         } catch (IOException e) {
             e.printStackTrace();
@@ -89,8 +195,12 @@ public class TextExtract {
         //  (note: single whitespace for tag; this will mess up bytespans!
         //   either don't do bytespans until after tag removal or
         //   FIX THIS LATER!)
-        //fileContents = fileContents.replaceAll(markup_script_style_pattern,
-        //        replacement);
+        ///*
+        fileContents = fileContents.replaceAll(markup_script_pattern,
+                replacement);
+        fileContents = fileContents.replaceAll(markup_style_pattern,
+                replacement);
+        //*/
         fileContents = fileContents.replaceAll(markup_pattern, replacement);
 
         // write file

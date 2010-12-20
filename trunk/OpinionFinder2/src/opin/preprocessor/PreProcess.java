@@ -22,10 +22,23 @@ import opin.entity.Corpus;
 import opin.io.*;
 import opin.preprocessor.entity.*;
 
+/**
+ * This class reads in documents from a doclist and generates the gate_default
+ * files. the stanford parser is used for lemmatization. The functionality of
+ * module 2 is encompassed by this class.
+ *
+ * @author cem (minor modifications and comments by conrada)
+ */
 public class PreProcess {
 	
-	
+	/**
+         * encoding of the documents specified in doclist
+         */
 	private String encoding;
+
+        /**
+         * stanford model file; ie, models/left3words-wsj-0-18.tagger
+         */
 	private File posModel;
 	
 	
@@ -100,6 +113,11 @@ public class PreProcess {
 	
 	public void process(Corpus corpus){
 		
+            // eventually, process should be modified to return this, so that
+            //  future parts of the pipeline don't need to reread it from disk
+            ArrayList<ArrayList<GateDefaultLine>> gateDefaultContents =
+                    new ArrayList<ArrayList<GateDefaultLine>>();
+
 		FileInputStream rawFile=null;
 		InputStreamReader sReader=null;
 		BufferedReader bReader=null;
